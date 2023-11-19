@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Josefin+Slab:wght@100&family=Kanit:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Glass Antiqua', cursive;
+}
+
+body{
+    background-image: url(Fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+.box{
+    display: flex;
+    width: 930px;
+}
+
+.img-box{
+    background-color: #060006;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.form-box{
+    background-color: #0e010e;
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-box h2 {
+    font-size: 30px;
+    color:#fbfbfb
+}
+
+.form-box p{
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+.form-box p a{
+    color: #9d428e;
+    text-decoration: none;
+}
+.form-box form{
+    margin: 20px 0 ;
+}
+ form .input-group{
+    margin-bottom: 15px;
+ }
+
+ form .input-group label{
+    color: #fbfbfb;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+ }
+
+ form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: #22012e;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #9b0ad0;
+    transition: all 0.4s ease;
+ }
+
+ form .input-group input:focus{
+    border-color: #9b0ad0;
+ }
+
+ form .input-group button{
+    width: 100%;
+    height: 45px;
+    background: #22012e;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 15px;
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+ }
+
+
+ @media (max-width:930px) {
+    .img-box{
+        display: none;
+    }
+
+    .box{
+        width: 700px;
+    }
+
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+ }
+
+ @media (max-width:500px) {
+    .w50 {
+        width: 100%;
+        padding: 0;
+    }
+ }
+
